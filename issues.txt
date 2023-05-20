@@ -1,0 +1,92 @@
+ERROR stack
+	can be removed https://www.apollographql.com/docs/apollo-server/data/errors/
+SingUp account created is always a User
+#MAKE seperate module for validation throwing errors is not good
+
+
+
+
+functions:
+	sign token 2, correct pass, 
+
+login X
+SignUp username can be made better , validations are done  X
+editUSER X
+deleteUSer is deleteing record from db its should be changing status X
+forgotPassword X
+all fucntionality X
+ARE GQL Validation enough on getAll USer
+
+
+
+------------------------------------------------------------
+EDIT USER validation not working fixed input update problem  X
+validation===== try in prisma
+	only email validation is applied using validator
+	tolower,unique,check if valid email.
+
+problem with output of login if user dont exsists error handling
+findFirst in restPassword instead of unique
+confirm password is removed
+i am not encrypting password in sign up    X done
+
+login create user is messing up
+
+updating pass by using email, but i need it to move to ID
+
+edit user vs edit pass checkout resetPass
+REmove mongoose
+correct password logic is fucked up in login
+	--------------------
+getUserByid          why to use and where to get the ID?
+getUserByemail
+chage types
+
+
+
+-----------------------------------------------------------------------------------------------
+
+create a random key that will be provided on auth header so that no onecan create multiple request like ddos.
+if the key is present let the request be processed else reject the req
+
+1 refactor
+2 datasources with rest
+3 auth
+
+getSingleUser   have problems
+signToken is pasted	
+double await from delete and edit removed so i nned to test it again
+
+refactor against best practices
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------
+create user
+getUSER
+updateME
+updateUser
+deleteME
+ 
+signup		 X  password changed at field
+logout			ask from sir only replacing cookie
+login            X	when pass incoreect this throws error
+forgotPass Email      x      using req as context 
+
+resetPass by token throug email X done 
+updatePass throug UI
+is user logged in
+
+protect
+restrict
+
+
