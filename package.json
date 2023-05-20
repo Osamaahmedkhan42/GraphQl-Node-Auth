@@ -1,0 +1,45 @@
+{
+  "name": "nodejs-graphql-auth",
+  "version": "0.0.01",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node --experimental-specifier-resolution=node ./dist/index.js",
+    "dev": "npm run build && npm run start",
+    "dev:hot": "tsc-watch --onSuccess \"nodemon --experimental-specifier-resolution=node ./dist/index.js\"",
+    "start:prod": "node --experimental-specifier-resolution=node ./dist/index.js",
+    "build:watch": "tsc -p . -w",
+    "lint": "eslint src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/datasource-rest": "^5.0.2",
+    "@apollo/server": "^4.3.1",
+    "@prisma/client": "^4.10.1",
+    "@types/passport": "^1.0.11",
+    "apollo-server-express": "^3.11.1",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
+    "nodemailer": "^6.9.1",
+    "passport": "^0.6.0",
+    "sib-api-v3-typescript": "^1.2.1",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.11.18",
+    "@types/nodemailer": "^6.4.7",
+    "@types/validator": "^13.7.12",
+    "prisma": "^4.10.1",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4"
+  }
+}
